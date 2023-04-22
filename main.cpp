@@ -1,14 +1,13 @@
 #include <iostream>
 #include <string>
 
-using namespace std;
+#include "helpers.h"
 
 int main() {
-    cout << "What is your name: ";
+    PrintLine("What is your name: ");
 
-    string data;
-    getline(cin, data);
+    std::string name = GetName();
 
-    cout << "Hello " << data << "!\n";
+    PrintLine("Hello " + name + "!");
     return 0;
 }
